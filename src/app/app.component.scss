@@ -44,19 +44,20 @@
             height: 200px;
             width: 100%;
             background-color: var(--ct-pink);
+            position: absolute;
 
             &-row1,
             &-row2 {
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
+                background-color: var(--ct-blue);
             }
 
             &-row2 {
                 display: flex;
                 justify-content: space-between;
-                flex-wrap: wrap;
-                background-color: var(--ct-blue);
+                flex-wrap: wrap;                
 
                 &-left,
                 &-right {
@@ -120,13 +121,6 @@
                 }
             }
         }
-
-        &__bottom {
-            height: calc(100% - 200px);
-            width: 100%;
-            background-color: var(--ct-blue);
-        }
-
     }
 }
 
