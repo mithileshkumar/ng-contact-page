@@ -45,80 +45,90 @@
             width: 100%;
             background-color: var(--ct-pink);
             position: absolute;
+        }
 
-            &-row1,
-            &-row2 {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                background-color: var(--ct-blue);
+        &__middle,
+        &__bottom {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: var(--ct-blue);
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &-left,
+            &-right {
+                height: 100%
             }
 
-            &-row2 {
+            &-left {
+                box-sizing: border-box;
+                width: 50%;
                 display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;                
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 50px;
+                color: white;
+            }
 
-                &-left,
-                &-right {
-                    height: 100%
-                }
+            &-right {
+                box-sizing: border-box;
+                width: 50%;
+                padding: 50px;
+            }
+        }
 
-                &-left {
-                    box-sizing: border-box;
-                    width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    padding: 50px;
-                    color: white;
-                }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            color: white;
 
-                &-right {
-                    box-sizing: border-box;
-                    width: 50%;
-                    padding: 50px;
+            &-button {
+                font-family: 'Open Sans', sans-serif;
+                background-color: white;
+                height: 50px;
+                line-height: 50px;
+                outline: transparent;
+                border: none;
+                font-size: 18px;
+            }
 
-                    form {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        gap: 10px;
-                        color: white;
+            input {
+                height: 45px;
+                line-height: 25px;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid white;
+                color: white;
+                font-size: 16px;
+            }
 
-                        input {
-                            height: 45px;
-                            line-height: 25px;
-                            background: transparent;
-                            border: none;
-                            outline: none;
-                            border-bottom: 2px solid white;
-                            color: white;
-                            font-size: 16px;
-                        }
+            &-label {
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                line-height: 25px;
+                font-size: 18px;
+            }
 
-                        label {
-                            font-family: "Roboto", sans-serif;
-                            font-weight: 700;
-                            line-height: 25px;
-                            font-size: 18px;
-                        }
+            textarea {
+                height: 100px;
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+                font-size: 16px;
+            }
 
-                        textarea {
-                            height: 100px;
-                            background-color: transparent;
-                            border: none;
-                            color: white;
-                            outline: none;
-                            font-size: 16px;
-                        }
-
-                        textarea:focus {
-                            border: none;
-                            outline: none;
-                        }
-                    }
-                }
+            textarea:focus {
+                border: none;
+                outline: none;
             }
         }
     }
@@ -142,16 +152,6 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 32px;
-}
-
-button {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-    height: 50px;
-    line-height: 50px;
-    outline: transparent;
-    border: none;
-    font-size: 18px;;
 }
 
 .blue-icons {
