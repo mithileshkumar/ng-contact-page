@@ -93,12 +93,14 @@
                             outline: none;
                             border-bottom: 2px solid white;
                             color: white;
+                            font-size: 16px;
                         }
 
                         label {
-                            font-family: 'Open Sans, sans-serif';
+                            font-family: "Roboto", sans-serif;
                             font-weight: 700;
                             line-height: 25px;
+                            font-size: 18px;
                         }
 
                         textarea {
@@ -107,6 +109,7 @@
                             border: none;
                             color: white;
                             outline: none;
+                            font-size: 16px;
                         }
 
                         textarea:focus {
@@ -154,6 +157,7 @@ button {
     line-height: 50px;
     outline: transparent;
     border: none;
+    font-size: 18px;;
 }
 
 .blue-icons {
